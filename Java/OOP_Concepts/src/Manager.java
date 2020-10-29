@@ -1,13 +1,12 @@
 
-
 public class Manager extends Employee {
 	private Employee managee;
 	private double yearlyBonus;
-	
+
 	public Manager(int id, double wage, String workLocation, double hoursWorked) {
 		super(id, wage, workLocation, hoursWorked);
 		this.yearlyBonus = (.10 * wage) * 150;
-		
+
 	}
 
 	public Employee getManagee() {
@@ -26,5 +25,4 @@ public class Manager extends Employee {
 		this.yearlyBonus = yearlyBonus;
 	}
 
-	
 }
